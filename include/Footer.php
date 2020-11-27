@@ -51,10 +51,10 @@ include_once('LinkBS.php');
         <div class="col-4"></div>
         <div class="col-4">
           <div class="row">
-            <div class="col-2"> <img class = "imagen" src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png"></div>
-            <div class="col-2"><img class = "imagen" src="https://assets.stickpng.com/images/5842a8fba6515b1e0ad75b03.png"></div>
-            <div class="col-2"><img class = "imagen" src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c543.png"></div>
-            <div class="col-2"> <img class = "imagen" src="https://assets.stickpng.com/thumbs/58e91965eb97430e819064f5.png"></div>
+            <div class="col-2"> <img class = "imagen" src="img/TW.png"></div>
+            <div class="col-2"><img class = "imagen" src="img/TG.png"></div>
+            <div class="col-2"><img class = "imagen" src="img/WA.png"></div>
+            <div class="col-2"> <img class = "imagen" src="img/FB.png"></div>
             <div class="col-2"><img class = "imagen" src="img/instangram.png"></div>
             <div class="col-2"><img class = "imagen" src="img/tiktok.png"></div>
           </div>

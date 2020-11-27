@@ -71,9 +71,7 @@
           // Crear las variables de sesión para el usuario loggeado
           $_SESSION['id'] = $usuario['C_ID'];
           $_SESSION['correo'] = $usuario['C_CorreoE'];
-          //$_SESSION['tipoUsuario'] = $usuario['tipoUsuario'];
-          // Redireccionar al archivo registro.php
-          header("Location: index.php");
+          header("Location: index.php"); // Direccionar al Index
         } else {
           echo "Error";
         }
@@ -151,11 +149,10 @@
           if(isset($_POST['crear'])) {
             $Correo = mysqli_real_escape_string($conexion, $_POST['Correo']);
             $pwd = mysqli_real_escape_string($conexion, $_POST['Password']);
-            $password = MD5($pwd); 
+            $password = MD5($pwd); // MD5 un metodo de encriptacion para seguridad :)
             // Confirmar que no hay un Correo Duplicado... :D
             $queryCorreo = "SELECT C_CorreoE FROM cliente WHERE C_CorreoE = '$Correo'";
             $resultadoCorreo = mysqli_query($conexion, $queryCorreo) or die(mysqli_error($conexion));
-            // verificar si hay una clave duplicada
             $correosRegistrados = mysqli_num_rows($resultadoCorreo);
             if($correosRegistrados > 0) {
               echo "<div class='alert alert-danger' role='alert'>
@@ -171,9 +168,9 @@
                 echo "<div class='alert alert-danger' role='alert'>
                 ERROR No se pudo crear el usuario: ".mysqli_error($conexion)."
                 </div>";
-              } // mysql_query
-            } // correosRegistrados
-          } // fin del isset
+              } 
+            } 
+          } 
         ?>
       </div>
     </main>
